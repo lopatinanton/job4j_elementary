@@ -10,10 +10,11 @@ public class Converter {
     }
 
     public static void main(String[] args) {
-        float dollar = Converter.rubleToDollar(60);
-        System.out.println("1 доллар = " + dollar + "рублей.");
-        float euro = Converter.rubleToEuro(70);
-        System.out.println("1 евро = " + euro + "рублей.");
+
+        float dollar = Converter.rubleToDollar(60f);
+        System.out.println("1 доллар = " + dollar + " рублей.");
+        float euro = Converter.rubleToEuro(70f);
+        System.out.println("1 евро = " + euro + " рублей.");
 
     }
 }
