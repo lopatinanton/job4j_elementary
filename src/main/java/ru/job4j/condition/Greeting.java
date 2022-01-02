@@ -3,8 +3,12 @@ package ru.job4j.condition;
 public class Greeting {
 
     public static void main(String[] args) {
-        int year = 2021;
-        String idea = "I like JAVA!" + " But I am a newbie." + year;
+
+        String idea = "I like JAVA!";
+        System.out.println(idea);
+        idea += "But I am a newbie.";
+        int year = 2022;
+        idea += year;
         System.out.println(idea);
     }
 }
