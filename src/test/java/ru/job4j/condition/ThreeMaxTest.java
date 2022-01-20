@@ -10,7 +10,7 @@ public class ThreeMaxTest {
         int second = 5;
         int third = 1;
         int result = ThreeMax.max(first, second, third);
-        int expected = 5;
+        int expected = 10;
         Assert.assertEquals(expected, result);
     }
 
