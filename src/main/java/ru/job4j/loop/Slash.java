@@ -13,6 +13,7 @@ public class Slash {
                 } else {
                     System.out.print(" ");
                 }
+
             }
             System.out.println();
         }
