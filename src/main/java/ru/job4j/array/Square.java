@@ -6,11 +6,11 @@ public class Square {
         for (int index = 0; index < bound; index++) {
             rst[index] = index * index;
         }
-            return rst;
+        return rst;
     }
 
     public static void main(String[] args) {
-        int[] array = calculate(4);
+        int[] array = calculate(5);
         for (int index = 0; index < array.length; index++) {
             System.out.println(array[index]);
         }
