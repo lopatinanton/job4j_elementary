@@ -33,6 +33,5 @@ public class LogicNot {
         System.out.println(notEvenAndPositive(-6));
         System.out.println(evenOrNotPositive(7));
     }
-
 }
 

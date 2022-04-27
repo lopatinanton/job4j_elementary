@@ -16,6 +16,5 @@ public class Fit {
         short womanHeight = 168;
         double woman = Fit.womanWeight(womanHeight);
         System.out.println("Идеальный вес для женщин при росте " + womanHeight + " см равен " + woman + " кг.");
-
     }
 }
