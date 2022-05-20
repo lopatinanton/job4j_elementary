@@ -6,46 +6,29 @@ import org.junit.Test;
 public class PointTest {
 
     @Test
-    public void when00to20then2() {
-        double expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+    public void when00to02then2() {
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        double dist = a.distance(b);
+        double expected = 2.0;
+        Assert.assertEquals(expected, dist, 0.01);
     }
 
     @Test
-    public void when00to30then3() {
-        double expected = 3;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 3;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+    public void when01to10then1dot41() {
+        Point a = new Point(0, 1);
+        Point b = new Point(1, 0);
+        double dist = a.distance(b);
+        double expected = 1.41;
+        Assert.assertEquals(expected, dist, 0.01);
     }
 
     @Test
-    public void when40to00then4() {
-        double expected = 4;
-        int x1 = 4;
-        int y1 = 0;
-        int x2 = 0;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
-    }
-
-    @Test
-    public void when00to05then5() {
-        double expected = 5;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 0;
-        int y2 = 5;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+    public void when090to101then0dot4() {
+        Point a = new Point(0, 90);
+        Point b = new Point(101, 0);
+        double dist = a.distance(b);
+        double expected = 135.28;
+        Assert.assertEquals(expected, dist, 0.01);
     }
 }
